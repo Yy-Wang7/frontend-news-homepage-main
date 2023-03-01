@@ -1,0 +1,262 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+a, .new-btn, .read-more, .bar-content-title, .trending-title {
+    transition: all 0.2s ease-out;
+}
+
+.main-container {
+    margin: 0 5% 50px 5%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+}
+
+.logo {
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+.headline-img {
+    width: 100%;
+}
+
+.headline-title {
+    font-family: 'Mulish', sans-serif;
+    font-size: 3rem;
+    line-height: 3.3rem;
+}
+
+.headline-content {
+    opacity: 60%;
+    line-height: 1.5rem;
+}
+
+button {
+    border: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 40px;
+    width: 160px;
+    margin-top: 15px;
+}
+
+.new-bar {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.new-btn {
+    font-size: 2.1rem;
+}
+
+.bar-content-2, .bar-content-3 {
+    margin-top: 40px;
+}
+
+.bar-content-1 {
+    margin-top: 20px;
+}
+
+.new-bar p {
+    opacity: 50%;
+    font-size: 0.8rem;
+    line-height: 25px;
+}
+
+.bar-content-title {
+    font-weight: 700;
+}
+
+.trending-container {
+    margin-top: 70px;
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.trending-container img {
+    flex-basis: 30%;
+    max-width: 30%;
+}
+
+.trending-container h1 {
+    margin-bottom: 10px;
+    opacity: 30%;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.trending-container h4 {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.trending-container p {
+    opacity: 60%;
+}
+
+.trending-intro {
+    flex-basis: 70%;
+    margin-left: 25px;
+}
+
+.landing-content {
+    padding-top: 20px;
+}
+
+.headline-img[screen-type=desktop] {
+    display: none;
+}
+
+.read-more:hover, .read-more:active {
+    background-color: hsl(5, 85%, 63%);
+}
+
+.trending-title:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+a:hover, .new-btn:hover, .bar-content-title:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.nav-desktop {
+    display: none;
+}
+
+.nav-desktop li {
+    display: inline-block;
+}
+
+.nav-desktop li:not(:last-child){
+    margin-right: 30px;
+}
+
+.mobile-menu-background {
+    background-color: hsla(0, 0%, 0%, 0.7);
+    position: fixed;
+    z-index: 99;
+    top: 0%;
+    right: 0%;
+    height: 100vh;
+    width: 0;
+}
+
+.mobile-menu-btn, .mobile-menu-btn-close {
+    cursor: pointer;
+}
+
+.mobile-menu-btn-close {
+    display: inline-block;
+    padding: 20px 0 0 20px;
+}
+
+#mobile-nav {
+    position: relative;
+    z-index: 100;
+    right: 0;
+    background-color: white;
+    height: 100vh;
+    width: 0;
+    margin-left:auto;
+    transition: 0.4s;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+@media (min-width: 700px) {
+    .headline-img[screen-type=mobile] {
+        display: none;
+    }
+
+    .headline-img[screen-type=desktop] {
+        display: block;
+    }
+
+    .main-container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 11%;
+    }
+
+    .main-page {
+        display: flex;
+    }
+
+    .new-bar {
+        flex-basis: 35%;
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
+    .headline {
+        flex-basis: 65%;
+    }
+}
+
+@media (min-width: 992px) {
+    .landing-content {
+        display: flex;
+    }
+
+    .headline-title {
+        flex-basis: 50%;
+        flex-shrink: 0.2;
+    }
+
+    .discription {
+        padding-left: 6%;
+    }
+
+    .trending-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .trending-item {
+        flex-basis: 31%;
+    }
+
+    .nav-desktop {
+        display: inline-flex;
+    }
+
+    .mobile-menu-background, .mobile-menu-btn{
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main-container {
+        padding: 0 158.4px;
+    }
+}
