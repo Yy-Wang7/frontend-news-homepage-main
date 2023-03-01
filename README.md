@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](./index.html)
+- Solution URL: [Solution URL](https://frontendsolutions-newshomepage.netlify.app/)
 
 ### Built with
 
